@@ -1,7 +1,7 @@
 import re
 
 def verifyInput(input):
-  if (re.match(r'^(f\(x\)\s?=\s?)?([a-zA-Z]|\d)\s?(\*|\+|\-|\/|\**)*\s?\d+', input)):
+  if (re.match(r'^([a-zA-Z]\([a-zA-Z]\)\s?=\s?)?((([a-zA-Z]|\d)\s?(\*|\+|\-|\/|\**)*\s?\d+)|[a-zA-Z])', input)):
     return True
   return False
 
